@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    app:layoutDescription="@xml/activity_main_scene">
+
+    <ImageView
+        android:id="@+id/img_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/download"
+        />
+
+    <TextView
+        android:id="@+id/txt1_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/this_is_motion_layout"
+        android:textSize="25sp"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/txt_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/motionlayout_bridges_the_gap_between_layout_transitions_and_complex_motion_handling_offering_a_mix_of_features_between_the_property_animation_framework_transitionmanager_and_coordinatorlayout_in_addition_to_describing_transitions_between_layouts_motionlayout_lets_you_animate_any_layout_properties_as_well_moreover_it_inherently_supports_seekable_transitions_this_means_that_you_can_instantly_show_any_point_within_the_transition_based_on_some_condition_such_as_touch_input_motionlayout_also_supports_keyframes_enabling_fully_customized_transitions_to_suit_your_needs_motionlayout_is_fully_declarative_meaning_that_you_can_describe_any_transitions_in_xml_no_matter_how_complex"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="@id/txt1_id"
+        app:layout_constraintStart_toStartOf="@id/txt1_id"
+        app:layout_constraintTop_toBottomOf="@+id/txt1_id" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
